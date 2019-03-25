@@ -9,5 +9,6 @@ This is official code repository of the course High Performance Computing LM, Ye
 
 - Codes/ --> Code snippets & tutorials
 - Exams/ --> Past exams
+- Slides/ --> (Part of) course slides
 
 ### Course slides can be found <a href="http://algo.ing.unimo.it/people/andrea/Didattica/HPC/index.html">here</a>
