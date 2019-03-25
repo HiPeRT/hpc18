@@ -14,4 +14,4 @@ clean:
 	rm -rf ${EXE} ${EXE}.exe
 	
 run:
-	./${EXE}.exe
+	./${EXE}
