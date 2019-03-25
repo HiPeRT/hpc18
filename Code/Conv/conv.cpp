@@ -8,6 +8,18 @@
 #define kRows 5
 #define kCols 5
 
+long int get_time_ms()
+{
+	// std::time_t t = std::time(0);  // t is an integer type
+    // std::cout << t << " seconds since 01-Jan-1970\n";
+
+	struct timeval tp;
+	gettimeofday(&tp, NULL);
+	long int ms = tp.tv_sec * 1000 + tp.tv_usec / 1000;
+    // std::cout << ms << " ms\n";
+	return ms;
+}
+
 void conv(float imageIn[][rows], float kernel[][kRows], float imageOut[][rows])
 {	
 	// find center position of kernel (half of kernel size)
@@ -15,14 +27,8 @@ void conv(float imageIn[][rows], float kernel[][kRows], float imageOut[][rows])
 	long kCenterY = kRows / 2;
 	int i, j, m, n, mm, nn, ii, jj;
 	
-	std::time_t t = std::time(0);  // t is an integer type
-    std::cout << t << " seconds since 01-Jan-1970\n";
-
-	struct timeval tp;
-	gettimeofday(&tp, NULL);
-	long int ms = tp.tv_sec * 1000 + tp.tv_usec / 1000;
-    std::cout << ms << " ms\n";
-
+	long int start = get_time_ms();
+	
 	#pragma omp parallel for default(none) \
 							 private(i, j, m, n, ii, jj, mm, nn ) \
 							 shared(imageIn, kernel, imageOut) \
@@ -50,6 +56,10 @@ void conv(float imageIn[][rows], float kernel[][kRows], float imageOut[][rows])
 			}
 		}
 	}
+	
+	long int end = get_time_ms();
+	
+	std::cout << "Took " << (end-start) << " ms" << std:endl;
 }
 
 float imageIn[rows][cols];
