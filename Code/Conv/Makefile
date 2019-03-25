@@ -1,7 +1,8 @@
 CC=gcc
 
-CCOPT=-Wall -fopenmp
-LDOPT=-lstdc++
+CCOPT  = -Wall
+#CCOPT += -fopenmp
+LDOPT  = -lstdc++
 
 EXE=conv
 CSRC=conv.cpp

@@ -3,8 +3,8 @@
 #include<sys/time.h>
 
 //const long rows = 16, cols = 16, kRows = 5, kCols = 5;
-#define rows 16
-#define cols 16
+#define rows 1024
+#define cols 1024
 #define kRows 5
 #define kCols 5
 
@@ -59,7 +59,7 @@ void conv(float imageIn[][rows], float kernel[][kRows], float imageOut[][rows])
 	
 	long int end = get_time_ms();
 	
-	std::cout << "Took " << (end-start) << " ms" << std:endl;
+	std::cout << "Took " << (end-start) << " ms" << std::endl;
 }
 
 float imageIn[rows][cols];
@@ -92,7 +92,7 @@ int main()
 		for (int j = 0; j < cols; j++)
 			imageIn[i][j] = 1000 * i + j;
 		
-		
+	/*	
 	std::cout << "Input matrix:" << std::endl;
 	for (int i = 0; i < rows; i++)
 	{
@@ -112,9 +112,9 @@ int main()
 		std::cout << std::endl;
 	}
 	std::cout << std::endl;
-
+	*/
 	conv(imageIn, kernel, imageOut);
-	
+	/*
 	std::cout << "Output matrix:" << std::endl;
 	for (int i = 0; i < rows; i++)
 	{
@@ -123,6 +123,7 @@ int main()
 			std::cout << imageOut[i][j] << " ";
 		std::cout << std::endl;
 	}
+	*/
 
 	return 0;
 }
