@@ -5,7 +5,7 @@ CCOPT  = -Wall
 LDOPT  = -lstdc++
 
 EXE=conv
-CSRC=conv.cpp
+CSRC=conv-seq.cpp
 
 all:
 	${CC} ${CCOPT} ${CSRC} -o ${EXE} ${LDOPT}
