@@ -11,4 +11,19 @@ This is official code repository of the course High Performance Computing LM, Ye
 - Exams/ --> Past exams
 - Slides/ --> (Part of) course slides
 
-### Course slides can be found <a href="http://algo.ing.unimo.it/people/andrea/Didattica/HPC/index.html">here</a>
+### All course slides can be found <a href="http://algo.ing.unimo.it/people/andrea/Didattica/HPC/index.html">here</a>
+
+### Clone ###
+
+Make sure you have a Git client on your machine
+- [Windows] Install git-scm from:
+  http://git-scm.com
+- [Unix]
+```bash
+sudo apt install git
+```
+
+- Clone repo
+```bash
+git clone https://github.com/HiPeRT/hpc18.git
+```
