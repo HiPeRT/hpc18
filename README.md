@@ -3,6 +3,7 @@ This is official code repository of the course High Performance Computing LM, Ye
 
 <a href="http://algo.ing.unimo.it/people/andrea/Didattica/HPC/index.html">Course page</a>
 
+<a href="http://hipert.unimore.it/people/paolob/pub/Calcolo_Parallelo/Slides/Git_Tutorial.pdf">Git tutorial</a>
 
 ## Folder structure
 
