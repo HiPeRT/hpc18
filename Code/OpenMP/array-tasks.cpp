@@ -11,13 +11,13 @@ int main()
 	
 	//#pragma omp parallel for shared(A) // is for loops
 	
-	#pragma omp parallel shared(A)
+	#pragma omp parallel shared(A) num_threads(....)
 	{
 		#pragma omp single
 		{
 			for(int i=0; i<NUM; i++)
 			{
-				#pragma omp task firstprivate(i)
+				#pragma omp task // firstprivate(i) // this is default
 				{
 					// Required for serialization of
 					//  out stream write
