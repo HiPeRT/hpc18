@@ -1,12 +1,17 @@
 #include<iostream>
 #include<ctime>
 #include<sys/time.h>
+#include <stdlib.h>
+#include <errno.h>   // for errno
+#include <limits.h>  // for INT_MAX
 
 //const long rows = 16, cols = 16, kRows = 5, kCols = 5;
-#define rows 1024
-#define cols 1024
+#define rows 3000
+#define cols 3000
 #define kRows 5
 #define kCols 5
+
+int nt;
 
 long int get_time_ms()
 {
@@ -29,32 +34,45 @@ void conv(float imageIn[][rows], float kernel[][kRows], float imageOut[][rows])
 	
 	long int start = get_time_ms();
 	
-	#pragma omp parallel for default(none) \
+	#pragma omp parallel default(none) \
 							 private(i, j, m, n, ii, jj, mm, nn ) \
 							 shared(imageIn, kernel, imageOut) \
-							 firstprivate(kCenterX, kCenterY)
+							 firstprivate(kCenterX, kCenterY) \
+							 num_threads(nt)
+	#pragma omp single
 	for (i = 0; i < rows; ++i)              // rows
 	{
-		for (j = 0; j < cols; ++j)          // columns
+	
+		#pragma omp task 				
 		{
-			for (m = 0; m < kRows; ++m)     // kernel rows
+
+			for (j = 0; j < cols; ++j)          // columns
 			{
-				mm = kRows - 1 - m;      // row index of flipped kernel
-
-				for (n = 0; n < kCols; ++n) // kernel columns
+	
+	
+				for (m = 0; m < kRows; ++m)     // kernel rows
 				{
-					nn = kCols - 1 - n;  // column index of flipped kernel
+					mm = kRows - 1 - m;      // row index of flipped kernel
 
-					// index of input signal, used for checking boundary
-					ii = i + (kCenterY - mm);
-					jj = j + (kCenterX - nn);
+					for (n = 0; n < kCols; ++n) // kernel columns
+					{
+					
+						nn = kCols - 1 - n;  // column index of flipped kernel
 
-					// ignore input samples which are out of bound
-					if (ii >= 0 && ii < rows && jj >= 0 && jj < cols)
-						imageOut[i][j] += imageIn[ii][jj] * kernel[mm][nn];
+						// index of input signal, used for checking boundary
+						ii = i + (kCenterY - mm);
+						jj = j + (kCenterX - nn);
+
+						// ignore input samples which are out of bound
+						if (ii >= 0 && ii < rows && jj >= 0 && jj < cols)
+							imageOut[i][j] += imageIn[ii][jj] * kernel[mm][nn];
+					
+					}
 				}
+
 			}
 		}
+		
 	}
 	
 	long int end = get_time_ms();
@@ -65,8 +83,24 @@ void conv(float imageIn[][rows], float kernel[][kRows], float imageOut[][rows])
 float imageIn[rows][cols];
 float imageOut[rows][cols];
 
-int main()
-{
+int main(int argc, char *argv[]){
+
+	char *p;
+
+	errno = 0;
+	long con = strtol(argv[1], &p, 10);
+
+	// Check for errors: e.g., the string does not represent an integer
+	// or the integer is larger than int
+	if (errno != 0 || *p != '\0' || con > INT_MAX) {
+		// Put here the handling of the error, like exiting the program with
+		// an error message
+	} else {
+		// No error
+		nt = con;    
+	}
+	
+	std::cout<<"Num threads: "<<nt<<"\n"; 
 #if 0
 	float kernel[][kCols] =
 	{

@@ -1,7 +1,3 @@
-/***********************************
- * http://www.songho.ca/dsp/convolution/convolution.html
- ***********************************/
-
 #include<iostream>
 
 //const long rows = 16, cols = 16, kRows = 5, kCols = 5;
@@ -62,7 +58,7 @@ int main()
 	{
 		0,0,0,0,0,
 		0,0,0,0,0,
-		0,0,4,0,0,
+		0,0,1,0,0,
 		0,0,0,0,0,
 		0,0,0,0,0
 	};
