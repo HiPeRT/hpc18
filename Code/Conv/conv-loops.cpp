@@ -2,6 +2,7 @@
 #include<ctime>
 #include<sys/time.h>
 #include <stdlib.h>
+#include <omp.h>
 #include <errno.h>   // for errno
 #include <limits.h>  // for INT_MAX
 
@@ -11,7 +12,8 @@
 #define kRows 5
 #define kCols 5
 
-int nt;
+
+int nt, chunk;
 
 long int get_time_ms()
 {
@@ -31,19 +33,16 @@ void conv(float imageIn[][rows], float kernel[][kRows], float imageOut[][rows])
 	long kCenterX = kCols / 2;
 	long kCenterY = kRows / 2;
 	int i, j, m, n, mm, nn, ii, jj;
-	
+
 	long int start = get_time_ms();
 	
-	#pragma omp parallel default(none) \
-							 private(i, j, m, n, ii, jj, mm, nn ) \
-							 shared(imageIn, kernel, imageOut) \
-							 firstprivate(kCenterX, kCenterY) \
+	#pragma omp parallel for  schedule(dynamic, chunk)\
 							 num_threads(nt)
-	#pragma omp single
 	for (i = 0; i < rows; ++i)              // rows
 	{
 	
-		#pragma omp task 				
+		#pragma omp task firstprivate(kCenterX, kCenterY) shared(imageIn, kernel, imageOut)	\
+									private(i, j, m, n, ii, jj, mm, nn )
 		{
 
 			for (j = 0; j < cols; ++j)          // columns
@@ -77,7 +76,7 @@ void conv(float imageIn[][rows], float kernel[][kRows], float imageOut[][rows])
 	
 	long int end = get_time_ms();
 	
-	std::cout << "Took " << (end-start) << " ms" << std::endl;
+	std::cout << (end-start) << std::endl;
 }
 
 float imageIn[rows][cols];
@@ -99,9 +98,19 @@ int main(int argc, char *argv[]){
 		// No error
 		nt = con;    
 	}
+
+	long chsize = strtol(argv[2], &p, 10);
+	if (errno != 0 || *p != '\0' || chsize > INT_MAX) {
+		// Put here the handling of the error, like exiting the program with
+		// an error message
+	} else {
+		// No error
+		chunk = chsize;    
+	}
 	
-	std::cout<<"Num threads: "<<nt<<"\n"; 
-#if 0
+	//std::cout<<"Num threads: "<<nt<<"\n"; 
+	//std::cout<<"Chunk size: "<<chunk<<"\n"; 
+	#if 0
 	float kernel[][kCols] =
 	{
 		0.003765, 0.015019, 0.023792, 0.015019, 0.003765,
