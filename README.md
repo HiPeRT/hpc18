@@ -27,3 +27,6 @@ sudo apt install git
 ```bash
 git clone https://github.com/HiPeRT/hpc18.git
 ```
+
+### Contribute to repo ### 
+- Request to be included as "student" to the <a href="https://github.com/orgs/HiPeRT" target="_blank">HiPeRT GIT org</a>
