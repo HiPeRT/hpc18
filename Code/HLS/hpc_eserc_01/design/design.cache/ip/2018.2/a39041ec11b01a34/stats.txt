@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Fri Apr 26 10:59:33 UTC 2019
+VLNV: xilinx.com:hls:counter:1.0
+SynthRuntime: 191

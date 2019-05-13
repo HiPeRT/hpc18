@@ -1,0 +1,28 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 TLS
+#  -string -flagsOSRD
+preplace port ap_start -pg 1 -y 320 -defaultsOSRD
+preplace port reset_rtl -pg 1 -y 100 -defaultsOSRD
+preplace port ap_start_led -pg 1 -y 200 -defaultsOSRD
+preplace port sys_clock -pg 1 -y 180 -defaultsOSRD
+preplace port led -pg 1 -y 110 -defaultsOSRD
+preplace inst clk_wiz -pg 1 -lvl 1 -y 170 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -y 260 -defaultsOSRD
+preplace inst rst_clk_wiz_5M -pg 1 -lvl 2 -y 120 -defaultsOSRD
+preplace inst counter_0 -pg 1 -lvl 3 -y 100 -defaultsOSRD
+preplace netloc clk_wiz_locked 1 1 1 230
+preplace netloc counter_0_led_out 1 3 1 NJ
+preplace netloc ap_start_1 1 0 4 NJ 320 NJ 320 600 200 NJ
+preplace netloc sys_clock_1 1 0 1 NJ
+preplace netloc xlconstant_0_dout 1 2 1 610J
+preplace netloc rst_clk_wiz_100M_peripheral_reset 1 2 1 N
+preplace netloc reset_rtl_1 1 0 2 20 100 NJ
+preplace netloc clk_wiz_clk_out1 1 1 2 220 20 590J
+levelinfo -pg 1 0 120 410 780 970 -top 0 -bot 340
+",
+}
+{
+   da_board_cnt: "3",
+   da_clkrst_cnt: "1",
+}

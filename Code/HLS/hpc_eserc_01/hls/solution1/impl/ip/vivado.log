@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Apr 26 12:19:09 2019
+# Process ID: 29725
+# Current directory: /storage/Documenti/Didattica/hpc/esercitazioni/hpc_eserc_01/hls/solution1/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /storage/Documenti/Didattica/hpc/esercitazioni/hpc_eserc_01/hls/solution1/impl/ip/vivado.log
+# Journal file: /storage/Documenti/Didattica/hpc/esercitazioni/hpc_eserc_01/hls/solution1/impl/ip/vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+ipx::create_core: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1239.930 ; gain = 28.016 ; free physical = 743 ; free virtual = 6753
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/storage/Programmi/Xilinx/Vivado/2018.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 26 12:20:21 2019...

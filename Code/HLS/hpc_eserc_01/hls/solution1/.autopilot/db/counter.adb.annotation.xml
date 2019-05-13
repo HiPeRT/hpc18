@@ -1,0 +1,5 @@
+<annotationInfo>
+<item  id="16" filename="hls/counter.cpp" linenumber="10" name="tmp" contextFuncName="counter" moduleName="counter" rtlName="tmp_fu_61_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="18" fileDirectory="/storage/Documenti/Didattica/hpc/esercitazioni/hpc_eserc_01"><\/item>
+<item  id="20" filename="hls/counter.cpp" linenumber="11" name="temp_count_1" contextFuncName="counter" moduleName="counter" rtlName="temp_count_1_fu_84_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="39" fileDirectory="/storage/Documenti/Didattica/hpc/esercitazioni/hpc_eserc_01"><\/item>
+<item  id="25" filename="hls/counter.cpp" linenumber="14" name="tmp_2" contextFuncName="counter" moduleName="counter" rtlName="tmp_2_fu_71_p2" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/storage/Documenti/Didattica/hpc/esercitazioni/hpc_eserc_01"><\/item>
+</annotationInfo>
