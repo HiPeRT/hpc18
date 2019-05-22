@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# 
+# Start of session at: Sun Apr 28 11:32:23 2019
+# Process ID: 27168
+# Current directory: /storage/Documenti/Didattica/hpc/esercitazioni/hpc_eserc_04/design/design.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /storage/Documenti/Didattica/hpc/esercitazioni/hpc_eserc_04/design/design.sdk/webtalk/webtalk.log
+# Journal file: /storage/Documenti/Didattica/hpc/esercitazioni/hpc_eserc_04/design/design.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

@@ -1,0 +1,165 @@
+
+
+================================================================
+== Vivado HLS Report for 'counter'
+================================================================
+* Date:           Fri Apr 26 13:31:11 2019
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        hls
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     4.321|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |    ?|    ?|         2|          -|          -|     ?|    no    |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / (tmp)
+4 --> 
+	3  / true
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 5 [1/1] (1.00ns)   --->   "%range_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %range_r) nounwind"   --->   Operation 5 'read' 'range_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%range_assign = alloca i32, align 4"   --->   Operation 6 'alloca' 'range_assign' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%temp_count = alloca i32, align 4"   --->   Operation 7 'alloca' 'temp_count' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "store volatile i32 %range_read, i32* %range_assign, align 4"   --->   Operation 8 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (1.76ns)   --->   "store volatile i32 0, i32* %temp_count, align 4" [hls/counter.cpp:11]   --->   Operation 9 'store' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %range_r) nounwind, !map !7"   --->   Operation 10 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %led_out) nounwind, !map !13"   --->   Operation 11 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([8 x i8]* @counter_str) nounwind"   --->   Operation 12 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%range_assign_load = load volatile i32* %range_assign, align 4" [hls/counter.cpp:6]   --->   Operation 13 'load' 'range_assign_load' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %range_r, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [5 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [hls/counter.cpp:6]   --->   Operation 14 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [5 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [hls/counter.cpp:7]   --->   Operation 15 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "br label %1" [hls/counter.cpp:13]   --->   Operation 16 'br' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 2.47>
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%temp_count_load = load volatile i32* %temp_count, align 4" [hls/counter.cpp:13]   --->   Operation 17 'load' 'temp_count_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%range_assign_load_1 = load volatile i32* %range_assign, align 4" [hls/counter.cpp:13]   --->   Operation 18 'load' 'range_assign_load_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 19 [1/1] (2.47ns)   --->   "%tmp = icmp slt i32 %temp_count_load, %range_assign_load_1" [hls/counter.cpp:13]   --->   Operation 19 'icmp' 'tmp' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 20 [1/1] (0.00ns)   --->   "br i1 %tmp, label %2, label %3" [hls/counter.cpp:13]   --->   Operation 20 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%led_status_load = load i1* @led_status, align 1" [hls/counter.cpp:17]   --->   Operation 21 'load' 'led_status_load' <Predicate = (!tmp)> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (0.97ns)   --->   "%tmp_2 = xor i1 %led_status_load, true" [hls/counter.cpp:17]   --->   Operation 22 'xor' 'tmp_2' <Predicate = (!tmp)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "store i1 %tmp_2, i1* @led_status, align 1" [hls/counter.cpp:17]   --->   Operation 23 'store' <Predicate = (!tmp)> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %led_out, i1 %tmp_2) nounwind" [hls/counter.cpp:19]   --->   Operation 24 'write' <Predicate = (!tmp)> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "ret void" [hls/counter.cpp:20]   --->   Operation 25 'ret' <Predicate = (!tmp)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 4.32>
+ST_4 : Operation 26 [1/1] (0.00ns)   --->   "%temp_count_load_1 = load volatile i32* %temp_count, align 4" [hls/counter.cpp:14]   --->   Operation 26 'load' 'temp_count_load_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 27 [1/1] (2.55ns)   --->   "%temp_count_1 = add nsw i32 %temp_count_load_1, 1" [hls/counter.cpp:14]   --->   Operation 27 'add' 'temp_count_1' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 28 [1/1] (1.76ns)   --->   "store volatile i32 %temp_count_1, i32* %temp_count, align 4" [hls/counter.cpp:14]   --->   Operation 28 'store' <Predicate = true> <Delay = 1.76>
+ST_4 : Operation 29 [1/1] (0.00ns)   --->   "br label %1" [hls/counter.cpp:15]   --->   Operation 29 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	'alloca' operation ('temp_count') [9]  (0 ns)
+	'store' operation (hls/counter.cpp:11) of constant 0 on local variable 'temp_count' [14]  (1.77 ns)
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 2.47ns
+The critical path consists of the following:
+	'load' operation ('temp_count_load', hls/counter.cpp:13) on local variable 'temp_count' [17]  (0 ns)
+	'icmp' operation ('tmp', hls/counter.cpp:13) [19]  (2.47 ns)
+
+ <State 4>: 4.32ns
+The critical path consists of the following:
+	'load' operation ('temp_count_load_1', hls/counter.cpp:14) on local variable 'temp_count' [22]  (0 ns)
+	'add' operation ('temp_count', hls/counter.cpp:14) [23]  (2.55 ns)
+	'store' operation (hls/counter.cpp:14) of variable 'temp_count', hls/counter.cpp:14 on local variable 'temp_count' [24]  (1.77 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

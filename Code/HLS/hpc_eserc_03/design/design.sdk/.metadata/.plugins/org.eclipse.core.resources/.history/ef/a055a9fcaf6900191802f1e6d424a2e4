@@ -1,0 +1,51 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "platform.h"
+
+#include "xil_printf.h"
+#include "xil_cache.h"
+
+#include "xcopymem.h"
+
+#define N 8
+
+int main() {
+
+    init_platform();
+
+    uint8_t src[N];
+    uint8_t dst[N];
+
+    memset(dst, 0, N);
+
+    for(int i = 0; i < N; ++i){
+    	src[i] = i;
+    }
+
+    Xil_DCacheFlush();
+
+    XCopymem XCopyMemInstance;
+    XCopymem_Initialize(&XCopyMemInstance, 0);
+
+    XCopymem_Set_dst(&XCopyMemInstance, dst);
+    XCopymem_Set_src(&XCopyMemInstance, src);
+    XCopymem_Set_bytes(&XCopyMemInstance, N);
+
+    XCopymem_Start(&XCopyMemInstance);
+
+    while(!XCopymem_IsDone(&XCopyMemInstance));
+
+    Xil_DCacheInvalidate();
+
+    printf("dst =\n");
+    for(int i = 0; i < N; ++i) {
+    	printf("%X ", dst[i]);
+    }
+    printf("\n");
+
+    cleanup_platform();
+
+    return 0;
+}

@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Sun Apr 28 09:43:38 UTC 2019
+VLNV: xilinx.com:hls:copyMem:1.0
+SynthRuntime: 252

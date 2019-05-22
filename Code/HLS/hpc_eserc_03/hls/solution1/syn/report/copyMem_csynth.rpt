@@ -1,0 +1,215 @@
+
+
+================================================================
+== Vivado HLS Report for 'copyMem'
+================================================================
+* Date:           Fri May 17 15:01:59 2019
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        hls
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.750|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |    ?|    ?|         2|          -|          -|     ?|    no    |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|    104|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        2|      -|     730|    996|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|    143|
+|Register         |        -|      -|     313|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        2|      0|    1043|   1243|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |    ~0   |      0|   ~0   |      2|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +----------------------+--------------------+---------+-------+-----+-----+
+    |       Instance       |       Module       | BRAM_18K| DSP48E|  FF | LUT |
+    +----------------------+--------------------+---------+-------+-----+-----+
+    |copyMem_ctrl_s_axi_U  |copyMem_ctrl_s_axi  |        0|      0|  182|  296|
+    |copyMem_ddr_m_axi_U   |copyMem_ddr_m_axi   |        2|      0|  548|  700|
+    +----------------------+--------------------+---------+-------+-----+-----+
+    |Total                 |                    |        2|      0|  730|  996|
+    +----------------------+--------------------+---------+-------+-----+-----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------+----------+-------+---+----+------------+------------+
+    |    Variable Name   | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------+----------+-------+---+----+------------+------------+
+    |i_1_fu_144_p2       |     +    |      0|  0|  71|          64|           1|
+    |ap_block_state9     |    and   |      0|  0|   2|           1|           1|
+    |exitcond_fu_139_p2  |   icmp   |      0|  0|  29|          64|          64|
+    |ap_block_state2_io  |    or    |      0|  0|   2|           1|           1|
+    +--------------------+----------+-------+---+----+------------+------------+
+    |Total               |          |      0|  0| 104|         130|          67|
+    +--------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------+----+-----------+-----+-----------+
+    |            Name            | LUT| Input Size| Bits| Total Bits|
+    +----------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                   |  62|         15|    1|         15|
+    |ap_sig_ioackin_ddr_ARREADY  |   9|          2|    1|          2|
+    |ap_sig_ioackin_ddr_AWREADY  |   9|          2|    1|          2|
+    |ap_sig_ioackin_ddr_WREADY   |   9|          2|    1|          2|
+    |ddr_blk_n_AR                |   9|          2|    1|          2|
+    |ddr_blk_n_AW                |   9|          2|    1|          2|
+    |ddr_blk_n_B                 |   9|          2|    1|          2|
+    |ddr_blk_n_R                 |   9|          2|    1|          2|
+    |ddr_blk_n_W                 |   9|          2|    1|          2|
+    |i_reg_104                   |   9|          2|   64|        128|
+    +----------------------------+----+-----------+-----+-----------+
+    |Total                       | 143|         33|   73|        159|
+    +----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------+----+----+-----+-----------+
+    |            Name            | FF | LUT| Bits| Const Bits|
+    +----------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                   |  14|   0|   14|          0|
+    |ap_reg_ioackin_ddr_ARREADY  |   1|   0|    1|          0|
+    |ap_reg_ioackin_ddr_AWREADY  |   1|   0|    1|          0|
+    |ap_reg_ioackin_ddr_WREADY   |   1|   0|    1|          0|
+    |bytes_read_reg_150          |  64|   0|   64|          0|
+    |ddr_addr_1_reg_161          |  32|   0|   32|          0|
+    |ddr_addr_read_reg_181       |   8|   0|    8|          0|
+    |ddr_addr_reg_155            |  32|   0|   32|          0|
+    |i_1_reg_176                 |  64|   0|   64|          0|
+    |i_reg_104                   |  64|   0|   64|          0|
+    |tmp_reg_167                 |  32|   0|   32|          0|
+    +----------------------------+----+----+-----+-----------+
+    |Total                       | 313|   0|  313|          0|
+    +----------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+------------+--------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  | Source Object|    C Type    |
++--------------------+-----+-----+------------+--------------+--------------+
+|s_axi_ctrl_AWVALID  |  in |    1|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_AWREADY  | out |    1|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_AWADDR   |  in |    6|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_WVALID   |  in |    1|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_WREADY   | out |    1|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_WDATA    |  in |   32|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_WSTRB    |  in |    4|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_ARVALID  |  in |    1|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_ARREADY  | out |    1|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_ARADDR   |  in |    6|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_RVALID   | out |    1|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_RREADY   |  in |    1|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_RDATA    | out |   32|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_RRESP    | out |    2|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_BVALID   | out |    1|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_BREADY   |  in |    1|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_BRESP    | out |    2|    s_axi   |     ctrl     |    scalar    |
+|ap_clk              |  in |    1| ap_ctrl_hs |    copyMem   | return value |
+|ap_rst_n            |  in |    1| ap_ctrl_hs |    copyMem   | return value |
+|interrupt           | out |    1| ap_ctrl_hs |    copyMem   | return value |
+|m_axi_ddr_AWVALID   | out |    1|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_AWREADY   |  in |    1|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_AWADDR    | out |   32|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_AWID      | out |    1|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_AWLEN     | out |    8|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_AWSIZE    | out |    3|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_AWBURST   | out |    2|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_AWLOCK    | out |    2|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_AWCACHE   | out |    4|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_AWPROT    | out |    3|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_AWQOS     | out |    4|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_AWREGION  | out |    4|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_AWUSER    | out |    1|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_WVALID    | out |    1|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_WREADY    |  in |    1|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_WDATA     | out |   32|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_WSTRB     | out |    4|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_WLAST     | out |    1|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_WID       | out |    1|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_WUSER     | out |    1|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_ARVALID   | out |    1|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_ARREADY   |  in |    1|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_ARADDR    | out |   32|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_ARID      | out |    1|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_ARLEN     | out |    8|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_ARSIZE    | out |    3|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_ARBURST   | out |    2|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_ARLOCK    | out |    2|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_ARCACHE   | out |    4|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_ARPROT    | out |    3|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_ARQOS     | out |    4|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_ARREGION  | out |    4|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_ARUSER    | out |    1|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_RVALID    |  in |    1|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_RREADY    | out |    1|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_RDATA     |  in |   32|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_RLAST     |  in |    1|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_RID       |  in |    1|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_RUSER     |  in |    1|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_RRESP     |  in |    2|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_BVALID    |  in |    1|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_BREADY    | out |    1|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_BRESP     |  in |    2|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_BID       |  in |    1|    m_axi   |      ddr     |    pointer   |
+|m_axi_ddr_BUSER     |  in |    1|    m_axi   |      ddr     |    pointer   |
++--------------------+-----+-----+------------+--------------+--------------+
+

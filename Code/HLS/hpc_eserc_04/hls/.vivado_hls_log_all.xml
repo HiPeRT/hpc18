@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'conv/image' to 'conv/image_r' to avoid the conflict with HDL keywords or other object names." projectName="hls" solutionName="test" date="2019-04-28T11:59:54.183+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 14, distance = 1, offset = 1)&#xA;   between bus access on port 'mem' (hls/conv.cpp:59) and bus request on port 'mem' (hls/conv.cpp:59)." projectName="hls" solutionName="solution1" date="2019-04-27T16:42:20.921+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 13, distance = 1, offset = 1)&#xA;   between bus access on port 'mem' (hls/conv.cpp:59) and bus request on port 'mem' (hls/conv.cpp:59)." projectName="hls" solutionName="solution1" date="2019-04-27T16:42:20.916+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 11, distance = 1, offset = 1)&#xA;   between bus access on port 'mem' (hls/conv.cpp:59) and bus request on port 'mem' (hls/conv.cpp:59)." projectName="hls" solutionName="solution1" date="2019-04-27T16:42:20.911+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)&#xA;   between bus access on port 'mem' (hls/conv.cpp:59) and bus request on port 'mem' (hls/conv.cpp:59)." projectName="hls" solutionName="solution1" date="2019-04-27T16:42:20.906+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)&#xA;   between bus access on port 'mem' (hls/conv.cpp:59) and bus request on port 'mem' (hls/conv.cpp:59)." projectName="hls" solutionName="solution1" date="2019-04-27T16:42:20.901+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)&#xA;   between bus access on port 'mem' (hls/conv.cpp:59) and bus request on port 'mem' (hls/conv.cpp:59)." projectName="hls" solutionName="solution1" date="2019-04-27T16:42:20.897+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xA;   between bus access on port 'mem' (hls/conv.cpp:59) and bus request on port 'mem' (hls/conv.cpp:59)." projectName="hls" solutionName="solution1" date="2019-04-27T16:42:20.893+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-65] Unable to satisfy pipeline directive: Loop contains subloop(s) not being unrolled or flattened." projectName="hls" solutionName="solution1" date="2019-04-27T16:42:20.888+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-451] Automatic burst inferencing is disabled for port 'image_dram' as a bitwidth mismatch was detected between port 'image_dram' and its bundle 'mem' (8 vs. 32). To allow bursting all ports sharing a bundle must have the same bitwidth." projectName="hls" solutionName="solution1" date="2019-04-27T16:42:20.676+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-451] Automatic burst inferencing is disabled for port 'image_dram' as a bitwidth mismatch was detected between port 'image_dram' and its bundle 'mem' (8 vs. 32)(hls/conv.cpp:59:9). To allow bursting all ports sharing a bundle must have the same bitwidth." projectName="hls" solutionName="solution1" date="2019-04-27T16:42:20.415+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-2' (hls/conv.cpp:27:9) in function 'conv' : &#xA;&#xA;&#xA;more than one sub loop." projectName="hls" solutionName="solution1" date="2019-04-27T16:42:20.412+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-2.1' (hls/conv.cpp:29:13) in function 'conv' : &#xA;&#xA;&#xA;more than one sub loop." projectName="hls" solutionName="solution1" date="2019-04-27T16:42:20.400+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-2.1.1.1.1' (hls/conv.cpp:41) in function 'conv': cannot completely unroll a loop with a variable trip count." projectName="hls" solutionName="solution1" date="2019-04-27T16:42:19.658+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-2.1.1.1' (hls/conv.cpp:36) in function 'conv': cannot completely unroll a loop with a variable trip count." projectName="hls" solutionName="solution1" date="2019-04-27T16:42:19.630+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'conv_ap_sitofp_4_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="hls" solutionName="solution1" date="2019-04-27T16:44:17.897+0200" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'conv_ap_fptrunc_0_no_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="hls" solutionName="solution1" date="2019-04-27T16:44:16.159+0200" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'conv_ap_fadd_3_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xA;create_ip: Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 1297.379 ; gain = 82.094 ; free physical = 142 ; free virtual = 6897" projectName="hls" solutionName="solution1" date="2019-04-27T16:44:11.079+0200" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

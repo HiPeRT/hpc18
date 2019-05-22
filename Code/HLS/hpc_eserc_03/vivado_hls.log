@@ -1,0 +1,52 @@
+INFO: [HLS 200-10] Running '/storage/Programmi/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'gian' on host 'Sirio' (Linux_x86_64 version 4.15.0-47-generic) on Fri May 17 15:01:45 CEST 2019
+INFO: [HLS 200-10] On os Ubuntu 18.04.2 LTS
+INFO: [HLS 200-10] In directory '/storage/Documenti/Didattica/hpc/esercitazioni/hpc_eserc_03'
+INFO: [HLS 200-10] Opening project '/storage/Documenti/Didattica/hpc/esercitazioni/hpc_eserc_03/hls'.
+INFO: [HLS 200-10] Adding design file 'hls/copyMem.cpp' to the project
+INFO: [HLS 200-10] Opening solution '/storage/Documenti/Didattica/hpc/esercitazioni/hpc_eserc_03/hls/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Analyzing design file 'hls/copyMem.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 375.727 ; gain = 0.172 ; free physical = 131 ; free virtual = 7016
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 375.727 ; gain = 0.172 ; free physical = 131 ; free virtual = 7016
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 375.727 ; gain = 0.172 ; free physical = 138 ; free virtual = 7015
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 375.727 ; gain = 0.172 ; free physical = 138 ; free virtual = 7015
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 503.555 ; gain = 128.000 ; free physical = 138 ; free virtual = 6997
+INFO: [XFORM 203-811] Inferring multiple bus burst read of variable length on port 'ddr' (hls/copyMem.cpp:13:3). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [XFORM 203-811] Inferring multiple bus burst write of variable length on port 'ddr' (hls/copyMem.cpp:13:3). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 503.555 ; gain = 128.000 ; free physical = 145 ; free virtual = 7006
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'copyMem' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'copyMem' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 13.81 seconds; current allocated memory: 61.372 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 1 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 61.559 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'copyMem' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'copyMem/ddr' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'copyMem/dst' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'copyMem/src' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'copyMem/bytes' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'copyMem' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'dst', 'src' and 'bytes' to AXI-Lite port ctrl.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'copyMem'.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 62.302 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 503.555 ; gain = 128.000 ; free physical = 153 ; free virtual = 7000
+INFO: [SYSC 207-301] Generating SystemC RTL for copyMem.
+INFO: [VHDL 208-304] Generating VHDL RTL for copyMem.
+INFO: [VLOG 209-307] Generating Verilog RTL for copyMem.
+INFO: [HLS 200-112] Total elapsed time: 15.21 seconds; peak allocated memory: 62.302 MB.

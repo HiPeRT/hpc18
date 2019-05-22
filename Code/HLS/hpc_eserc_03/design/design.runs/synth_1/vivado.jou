@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Apr 28 11:47:44 2019
+# Process ID: 28839
+# Current directory: /storage/Documenti/Didattica/hpc/esercitazioni/hpc_eserc_03/design/design.runs/synth_1
+# Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: /storage/Documenti/Didattica/hpc/esercitazioni/hpc_eserc_03/design/design.runs/synth_1/design_1_wrapper.vds
+# Journal file: /storage/Documenti/Didattica/hpc/esercitazioni/hpc_eserc_03/design/design.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

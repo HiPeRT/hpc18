@@ -1,0 +1,4 @@
+<annotationInfo>
+<item  id="26" filename="hls/copyMem.cpp" linenumber="12" name="exitcond" contextFuncName="copyMem" moduleName="copyMem" rtlName="exitcond_fu_139_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="29" fileDirectory="/storage/Documenti/Didattica/hpc/esercitazioni/hpc_eserc_03"><\/item>
+<item  id="27" filename="hls/copyMem.cpp" linenumber="12" name="i_1" contextFuncName="copyMem" moduleName="copyMem" rtlName="i_1_fu_144_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="71" fileDirectory="/storage/Documenti/Didattica/hpc/esercitazioni/hpc_eserc_03"><\/item>
+</annotationInfo>

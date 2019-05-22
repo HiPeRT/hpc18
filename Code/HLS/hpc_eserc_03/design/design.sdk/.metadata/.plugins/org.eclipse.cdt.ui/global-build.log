@@ -1,0 +1,659 @@
+14:18:11 **** Build of project copyMem_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_4/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_7/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_9/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_6/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/copyMem_v1_0/src
+make -C ps7_cortexa9_0/libsrc/copyMem_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_6/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_5/src
+make -C ps7_cortexa9_0/libsrc/sdps_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling dmaps
+arm-none-eabi-ar: creazione di ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ddrps
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_4/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_7/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling standalone
+In file included from sleep.c:57:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:55:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:53:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from usleep.c:60:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_9/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_6/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/copyMem_v1_0/src
+make -C ps7_cortexa9_0/libsrc/copyMem_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling copyMem
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_6/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_5/src
+make -C ps7_cortexa9_0/libsrc/sdps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scutimer
+Finished building libraries
+14:19:01 **** Build of configuration Debug for project copyMem ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../copyMem_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:32:41: warning: passing argument 2 of 'XCopymem_Set_dst' makes integer from pointer without a cast [-Wint-conversion]
+     XCopymem_Set_dst(&XCopyMemInstance, dst);
+                                         ^~~
+In file included from ../src/helloworld.c:10:0:
+../../copyMem_bsp/ps7_cortexa9_0/include/xcopymem.h:90:6: note: expected 'u32 {aka long unsigned int}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void XCopymem_Set_dst(XCopymem *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c:33:41: warning: passing argument 2 of 'XCopymem_Set_src' makes integer from pointer without a cast [-Wint-conversion]
+     XCopymem_Set_src(&XCopyMemInstance, src);
+                                         ^~~
+In file included from ../src/helloworld.c:10:0:
+../../copyMem_bsp/ps7_cortexa9_0/include/xcopymem.h:92:6: note: expected 'u32 {aka long unsigned int}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void XCopymem_Set_src(XCopymem *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../copyMem_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: copyMem.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../copyMem_bsp/ps7_cortexa9_0/lib -o "copyMem.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: copyMem.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size copyMem.elf  |tee "copyMem.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76508	   2588	  23344	 102440	  19028	copyMem.elf
+Finished building: copyMem.elf.size
+ 
+14:19:38 **** Incremental Build of configuration Debug for project copyMem ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nessuna operazione da eseguire per "main-build".
+14:19:52 **** Auto Build of configuration Debug for project copyMem ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../copyMem_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:32:41: warning: passing argument 2 of 'XCopymem_Set_dst' makes integer from pointer without a cast [-Wint-conversion]
+     XCopymem_Set_dst(&XCopyMemInstance, dst);
+                                         ^~~
+In file included from ../src/helloworld.c:10:0:
+../../copyMem_bsp/ps7_cortexa9_0/include/xcopymem.h:90:6: note: expected 'u32 {aka long unsigned int}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void XCopymem_Set_dst(XCopymem *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c:33:41: warning: passing argument 2 of 'XCopymem_Set_src' makes integer from pointer without a cast [-Wint-conversion]
+     XCopymem_Set_src(&XCopyMemInstance, src);
+                                         ^~~
+In file included from ../src/helloworld.c:10:0:
+../../copyMem_bsp/ps7_cortexa9_0/include/xcopymem.h:92:6: note: expected 'u32 {aka long unsigned int}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void XCopymem_Set_src(XCopymem *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: copyMem.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../copyMem_bsp/ps7_cortexa9_0/lib -o "copyMem.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: copyMem.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size copyMem.elf  |tee "copyMem.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76508	   2588	  23344	 102440	  19028	copyMem.elf
+Finished building: copyMem.elf.size
+ 
+14:19:56 **** Incremental Build of configuration Debug for project copyMem ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nessuna operazione da eseguire per "main-build".
+14:20:19 **** Auto Build of configuration Debug for project copyMem ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../copyMem_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:32:41: warning: passing argument 2 of 'XCopymem_Set_dst' makes integer from pointer without a cast [-Wint-conversion]
+     XCopymem_Set_dst(&XCopyMemInstance, dst);
+                                         ^~~
+In file included from ../src/helloworld.c:10:0:
+../../copyMem_bsp/ps7_cortexa9_0/include/xcopymem.h:90:6: note: expected 'u32 {aka long unsigned int}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void XCopymem_Set_dst(XCopymem *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c:33:41: warning: passing argument 2 of 'XCopymem_Set_src' makes integer from pointer without a cast [-Wint-conversion]
+     XCopymem_Set_src(&XCopyMemInstance, src);
+                                         ^~~
+In file included from ../src/helloworld.c:10:0:
+../../copyMem_bsp/ps7_cortexa9_0/include/xcopymem.h:92:6: note: expected 'u32 {aka long unsigned int}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void XCopymem_Set_src(XCopymem *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: copyMem.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../copyMem_bsp/ps7_cortexa9_0/lib -o "copyMem.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: copyMem.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size copyMem.elf  |tee "copyMem.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76508	   2588	  23344	 102440	  19028	copyMem.elf
+Finished building: copyMem.elf.size
+ 
+14:20:23 **** Incremental Build of configuration Debug for project copyMem ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nessuna operazione da eseguire per "main-build".
+14:20:44 **** Incremental Build of configuration Debug for project copyMem ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nessuna operazione da eseguire per "main-build".
+14:20:53 **** Auto Build of configuration Debug for project copyMem ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../copyMem_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:32:41: warning: passing argument 2 of 'XCopymem_Set_dst' makes integer from pointer without a cast [-Wint-conversion]
+     XCopymem_Set_dst(&XCopyMemInstance, dst);
+                                         ^~~
+In file included from ../src/helloworld.c:10:0:
+../../copyMem_bsp/ps7_cortexa9_0/include/xcopymem.h:90:6: note: expected 'u32 {aka long unsigned int}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void XCopymem_Set_dst(XCopymem *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c:33:41: warning: passing argument 2 of 'XCopymem_Set_src' makes integer from pointer without a cast [-Wint-conversion]
+     XCopymem_Set_src(&XCopyMemInstance, src);
+                                         ^~~
+In file included from ../src/helloworld.c:10:0:
+../../copyMem_bsp/ps7_cortexa9_0/include/xcopymem.h:92:6: note: expected 'u32 {aka long unsigned int}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void XCopymem_Set_src(XCopymem *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: copyMem.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../copyMem_bsp/ps7_cortexa9_0/lib -o "copyMem.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: copyMem.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size copyMem.elf  |tee "copyMem.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76508	   2588	  23344	 102440	  19028	copyMem.elf
+Finished building: copyMem.elf.size
+ 
+14:21:06 **** Incremental Build of configuration Debug for project copyMem ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nessuna operazione da eseguire per "main-build".
+14:22:13 **** Auto Build of configuration Debug for project copyMem ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../copyMem_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'src':
+../src/helloworld.c:20:29: error: expected declaration specifiers before numeric constant
+     uint8_t *src (uint8_t *)0x10000000;
+                             ^~~~~~~~~~
+../src/helloworld.c:21:17: error: expected expression before 'uint8_t'
+     uint8_t dst[uint8_t *src (uint8_t *)0x10000000;
+                 ^~~~~~~
+../src/helloworld.c:20:5: error: parameter name omitted
+     uint8_t *src (uint8_t *)0x10000000;
+     ^~~~~~~
+../src/helloworld.c:53:1: error: expected '{' at end of input
+ }
+ ^
+../src/helloworld.c:53:1: warning: no return statement in function returning non-void [-Wreturn-type]
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:53:1: error: expected declaration or statement at end of input
+At top level:
+../src/helloworld.c:20:14: warning: 'src' defined but not used [-Wunused-function]
+     uint8_t *src (uint8_t *)0x10000000;
+              ^~~
+src/subdir.mk:24: recipe for target 'src/helloworld.o' failed
+make: *** [src/helloworld.o] Error 1
+14:22:25 **** Auto Build of configuration Debug for project copyMem ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../copyMem_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:20:5: error: function 'src' is initialized like a variable
+     uint8_t *src (uint8_t *)SRC_ADDR
+     ^~~~~~~
+../src/helloworld.c:21:5: error: expected ',' or ';' before 'uint8_t'
+     uint8_t dst[uint8_t *src (uint8_t *)0x10000000;
+     ^~~~~~~
+../src/helloworld.c:23:12: error: 'dst' undeclared (first use in this function); did you mean 'dsb'?
+     memset(dst, 0, N);
+            ^~~
+            dsb
+../src/helloworld.c:23:12: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:26:9: error: subscripted value is neither array nor pointer nor vector
+      src[i] = i;
+         ^
+../src/helloworld.c:35:41: warning: passing argument 2 of 'XCopymem_Set_src' makes integer from pointer without a cast [-Wint-conversion]
+     XCopymem_Set_src(&XCopyMemInstance, src);
+                                         ^~~
+In file included from ../src/helloworld.c:10:0:
+../../copyMem_bsp/ps7_cortexa9_0/include/xcopymem.h:92:6: note: expected 'u32 {aka long unsigned int}' but argument is of type 'uint8_t * (*)(uint8_t *) {aka unsigned char * (*)(unsigned char *)}'
+ void XCopymem_Set_src(XCopymem *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c:20:14: error: nested function 'src' declared but never defined
+     uint8_t *src (uint8_t *)SRC_ADDR
+              ^~~
+make: *** [src/helloworld.o] Error 1
+src/subdir.mk:24: recipe for target 'src/helloworld.o' failed
+14:22:41 **** Auto Build of configuration Debug for project copyMem ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../copyMem_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:20:5: error: function 'src' is initialized like a variable
+     uint8_t *src (uint8_t *)SRC_ADDR
+     ^~~~~~~
+../src/helloworld.c:21:5: error: expected ',' or ';' before 'uint8_t'
+     uint8_t *dst (uint8_t *)DST_ADDR;
+     ^~~~~~~
+../src/helloworld.c:23:12: error: 'dst' undeclared (first use in this function); did you mean 'dsb'?
+     memset(dst, 0, N);
+            ^~~
+            dsb
+../src/helloworld.c:23:12: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:26:9: error: subscripted value is neither array nor pointer nor vector
+      src[i] = i;
+         ^
+../src/helloworld.c:35:41: warning: passing argument 2 of 'XCopymem_Set_src' makes integer from pointer without a cast [-Wint-conversion]
+     XCopymem_Set_src(&XCopyMemInstance, src);
+                                         ^~~
+In file included from ../src/helloworld.c:10:0:
+../../copyMem_bsp/ps7_cortexa9_0/include/xcopymem.h:92:6: note: expected 'u32 {aka long unsigned int}' but argument is of type 'uint8_t * (*)(uint8_t *) {aka unsigned char * (*)(unsigned char *)}'
+ void XCopymem_Set_src(XCopymem *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c:20:14: error: nested function 'src' declared but never defined
+     uint8_t *src (uint8_t *)SRC_ADDR
+              ^~~
+src/subdir.mk:24: recipe for target 'src/helloworld.o' failed
+make: *** [src/helloworld.o] Error 1
+14:22:44 **** Auto Build of configuration Debug for project copyMem ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../copyMem_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:20:5: error: function 'src' is initialized like a variable
+     uint8_t *src (uint8_t *)SRC_ADDR;
+     ^~~~~~~
+../src/helloworld.c:21:5: error: function 'dst' is initialized like a variable
+     uint8_t *dst (uint8_t *)DST_ADDR;
+     ^~~~~~~
+../src/helloworld.c:13:18: error: expected expression before '=' token
+ #define SRC_ADDR = 0x10000000
+                  ^
+../src/helloworld.c:14:20: note: in expansion of macro 'SRC_ADDR'
+ #define DST_ADDR = SRC_ADDR + N
+                    ^~~~~~~~
+../src/helloworld.c:21:29: note: in expansion of macro 'DST_ADDR'
+     uint8_t *dst (uint8_t *)DST_ADDR;
+                             ^~~~~~~~
+../src/helloworld.c:26:9: error: subscripted value is neither array nor pointer nor vector
+      src[i] = i;
+         ^
+../src/helloworld.c:34:41: warning: passing argument 2 of 'XCopymem_Set_dst' makes integer from pointer without a cast [-Wint-conversion]
+     XCopymem_Set_dst(&XCopyMemInstance, dst);
+                                         ^~~
+In file included from ../src/helloworld.c:10:0:
+../../copyMem_bsp/ps7_cortexa9_0/include/xcopymem.h:90:6: note: expected 'u32 {aka long unsigned int}' but argument is of type 'uint8_t * (*)(uint8_t *) {aka unsigned char * (*)(unsigned char *)}'
+ void XCopymem_Set_dst(XCopymem *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c:35:41: warning: passing argument 2 of 'XCopymem_Set_src' makes integer from pointer without a cast [-Wint-conversion]
+     XCopymem_Set_src(&XCopyMemInstance, src);
+                                         ^~~
+In file included from ../src/helloworld.c:10:0:
+../../copyMem_bsp/ps7_cortexa9_0/include/xcopymem.h:92:6: note: expected 'u32 {aka long unsigned int}' but argument is of type 'uint8_t * (*)(uint8_t *) {aka unsigned char * (*)(unsigned char *)}'
+ void XCopymem_Set_src(XCopymem *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c:46:23: error: subscripted value is neither array nor pointer nor vector
+      printf("%X ", dst[i]);
+                       ^
+../src/helloworld.c:21:14: error: nested function 'dst' declared but never defined
+     uint8_t *dst (uint8_t *)DST_ADDR;
+              ^~~
+../src/helloworld.c:20:14: error: nested function 'src' declared but never defined
+     uint8_t *src (uint8_t *)SRC_ADDR;
+              ^~~
+src/subdir.mk:24: recipe for target 'src/helloworld.o' failed
+make: *** [src/helloworld.o] Error 1
+14:22:50 **** Auto Build of configuration Debug for project copyMem ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../copyMem_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'src':
+../src/helloworld.c:13:18: error: expected declaration specifiers before numeric constant
+ #define SRC_ADDR 0x10000000
+                  ^
+../src/helloworld.c:20:29: note: in expansion of macro 'SRC_ADDR'
+     uint8_t *src (uint8_t *)SRC_ADDR;
+                             ^~~~~~~~
+../src/helloworld.c:13:18: error: expected '=', ',', ';', 'asm' or '__attribute__' before numeric constant
+ #define SRC_ADDR 0x10000000
+                  ^
+../src/helloworld.c:14:18: note: in expansion of macro 'SRC_ADDR'
+ #define DST_ADDR SRC_ADDR + N
+                  ^~~~~~~~
+../src/helloworld.c:21:29: note: in expansion of macro 'DST_ADDR'
+     uint8_t *dst (uint8_t *)DST_ADDR;
+                             ^~~~~~~~
+../src/helloworld.c:23:5: error: expected declaration specifiers before 'memset'
+     memset(dst, 0, N);
+     ^~~~~~
+../src/helloworld.c:25:5: error: expected declaration specifiers before 'for'
+     for(int i = 0; i < N; ++i){
+     ^~~
+../src/helloworld.c:25:20: error: expected declaration specifiers before 'i'
+     for(int i = 0; i < N; ++i){
+                    ^
+../src/helloworld.c:25:27: error: expected declaration specifiers before '++' token
+     for(int i = 0; i < N; ++i){
+                           ^~
+../src/helloworld.c:29:5: error: expected declaration specifiers before 'Xil_DCacheFlush'
+     Xil_DCacheFlush();
+     ^~~~~~~~~~~~~~~
+../src/helloworld.c:32:5: error: expected declaration specifiers before 'XCopymem_Initialize'
+     XCopymem_Initialize(&XCopyMemInstance, 0);
+     ^~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:34:5: error: expected declaration specifiers before 'XCopymem_Set_dst'
+     XCopymem_Set_dst(&XCopyMemInstance, dst);
+     ^~~~~~~~~~~~~~~~
+../src/helloworld.c:35:5: error: expected declaration specifiers before 'XCopymem_Set_src'
+     XCopymem_Set_src(&XCopyMemInstance, src);
+     ^~~~~~~~~~~~~~~~
+../src/helloworld.c:36:5: error: expected declaration specifiers before 'XCopymem_Set_bytes'
+     XCopymem_Set_bytes(&XCopyMemInstance, N);
+     ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:38:5: error: expected declaration specifiers before 'XCopymem_Start'
+     XCopymem_Start(&XCopyMemInstance);
+     ^~~~~~~~~~~~~~
+../src/helloworld.c:40:5: error: expected declaration specifiers before 'while'
+     while(!XCopymem_IsDone(&XCopyMemInstance));
+     ^~~~~
+../src/helloworld.c:42:5: error: expected declaration specifiers before 'Xil_DCacheInvalidate'
+     Xil_DCacheInvalidate();
+     ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:44:5: error: expected declaration specifiers before 'printf'
+     printf("dst =\n");
+     ^~~~~~
+../src/helloworld.c:45:5: error: expected declaration specifiers before 'for'
+     for(int i = 0; i < N; ++i) {
+     ^~~
+../src/helloworld.c:45:20: error: expected declaration specifiers before 'i'
+     for(int i = 0; i < N; ++i) {
+                    ^
+../src/helloworld.c:45:27: error: expected declaration specifiers before '++' token
+     for(int i = 0; i < N; ++i) {
+                           ^~
+../src/helloworld.c:48:5: error: expected declaration specifiers before 'printf'
+     printf("\n");
+     ^~~~~~
+../src/helloworld.c:50:5: error: expected declaration specifiers before 'cleanup_platform'
+     cleanup_platform();
+     ^~~~~~~~~~~~~~~~
+../src/helloworld.c:52:5: error: expected declaration specifiers before 'return'
+     return 0;
+src/subdir.mk:24: recipe for target 'src/helloworld.o' failed
+     ^~~~~~
+../src/helloworld.c:53:1: error: expected declaration specifiers before '}' token
+ }
+ ^
+../src/helloworld.c:20:14: error: old-style parameter declarations in prototyped function definition
+     uint8_t *src (uint8_t *)SRC_ADDR;
+              ^~~
+../src/helloworld.c:20:5: error: parameter name omitted
+     uint8_t *src (uint8_t *)SRC_ADDR;
+     ^~~~~~~
+../src/helloworld.c:53:1: error: expected '{' at end of input
+ }
+ ^
+../src/helloworld.c:53:1: warning: no return statement in function returning non-void [-Wreturn-type]
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:53:1: error: expected declaration or statement at end of input
+At top level:
+../src/helloworld.c:20:14: warning: 'src' defined but not used [-Wunused-function]
+     uint8_t *src (uint8_t *)SRC_ADDR;
+              ^~~
+make: *** [src/helloworld.o] Error 1
+14:23:10 **** Auto Build of configuration Debug for project copyMem ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../copyMem_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:34:41: warning: passing argument 2 of 'XCopymem_Set_dst' makes integer from pointer without a cast [-Wint-conversion]
+     XCopymem_Set_dst(&XCopyMemInstance, dst);
+                                         ^~~
+In file included from ../src/helloworld.c:10:0:
+../../copyMem_bsp/ps7_cortexa9_0/include/xcopymem.h:90:6: note: expected 'u32 {aka long unsigned int}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void XCopymem_Set_dst(XCopymem *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c:35:41: warning: passing argument 2 of 'XCopymem_Set_src' makes integer from pointer without a cast [-Wint-conversion]
+     XCopymem_Set_src(&XCopyMemInstance, src);
+                                         ^~~
+In file included from ../src/helloworld.c:10:0:
+../../copyMem_bsp/ps7_cortexa9_0/include/xcopymem.h:92:6: note: expected 'u32 {aka long unsigned int}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void XCopymem_Set_src(XCopymem *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: copyMem.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../copyMem_bsp/ps7_cortexa9_0/lib -o "copyMem.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: copyMem.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size copyMem.elf  |tee "copyMem.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76508	   2588	  23344	 102440	  19028	copyMem.elf
+Finished building: copyMem.elf.size
+ 
+14:23:31 **** Incremental Build of configuration Debug for project copyMem ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nessuna operazione da eseguire per "main-build".
+14:23:41 **** Auto Build of configuration Debug for project copyMem ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../copyMem_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:34:41: warning: passing argument 2 of 'XCopymem_Set_dst' makes integer from pointer without a cast [-Wint-conversion]
+     XCopymem_Set_dst(&XCopyMemInstance, dst);
+                                         ^~~
+In file included from ../src/helloworld.c:10:0:
+../../copyMem_bsp/ps7_cortexa9_0/include/xcopymem.h:90:6: note: expected 'u32 {aka long unsigned int}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void XCopymem_Set_dst(XCopymem *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c:35:41: warning: passing argument 2 of 'XCopymem_Set_src' makes integer from pointer without a cast [-Wint-conversion]
+     XCopymem_Set_src(&XCopyMemInstance, src);
+                                         ^~~
+In file included from ../src/helloworld.c:10:0:
+../../copyMem_bsp/ps7_cortexa9_0/include/xcopymem.h:92:6: note: expected 'u32 {aka long unsigned int}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void XCopymem_Set_src(XCopymem *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: copyMem.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../copyMem_bsp/ps7_cortexa9_0/lib -o "copyMem.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: copyMem.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size copyMem.elf  |tee "copyMem.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76508	   2588	  23344	 102440	  19028	copyMem.elf
+Finished building: copyMem.elf.size
+ 
+14:23:45 **** Incremental Build of configuration Debug for project copyMem ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nessuna operazione da eseguire per "main-build".
+14:24:21 **** Auto Build of configuration Debug for project copyMem ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../copyMem_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:40:41: warning: passing argument 2 of 'XCopymem_Set_dst' makes integer from pointer without a cast [-Wint-conversion]
+     XCopymem_Set_dst(&XCopyMemInstance, dst);
+                                         ^~~
+In file included from ../src/helloworld.c:10:0:
+../../copyMem_bsp/ps7_cortexa9_0/include/xcopymem.h:90:6: note: expected 'u32 {aka long unsigned int}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void XCopymem_Set_dst(XCopymem *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c:41:41: warning: passing argument 2 of 'XCopymem_Set_src' makes integer from pointer without a cast [-Wint-conversion]
+     XCopymem_Set_src(&XCopyMemInstance, src);
+                                         ^~~
+In file included from ../src/helloworld.c:10:0:
+../../copyMem_bsp/ps7_cortexa9_0/include/xcopymem.h:92:6: note: expected 'u32 {aka long unsigned int}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void XCopymem_Set_src(XCopymem *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: copyMem.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../copyMem_bsp/ps7_cortexa9_0/lib -o "copyMem.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: copyMem.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size copyMem.elf  |tee "copyMem.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76636	   2588	  23344	 102568	  190a8	copyMem.elf
+Finished building: copyMem.elf.size
+ 
+14:24:28 **** Incremental Build of configuration Debug for project copyMem ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nessuna operazione da eseguire per "main-build".
+17:38:28 **** Incremental Build of configuration Debug for project copyMem ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nessuna operazione da eseguire per "main-build".
+17:38:59 **** Incremental Build of configuration Debug for project copyMem ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nessuna operazione da eseguire per "main-build".

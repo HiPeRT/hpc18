@@ -1,0 +1,81 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <math.h>
+
+#include "platform.h"
+
+#include "xconv.h"
+#include "xtime_l.h"
+
+#include "xil_printf.h"
+#include "xil_cache.h"
+
+#define HEADER_SIZE 54 // deve essere allineato alla word
+
+#define BASE_ADDR	0x10000000
+
+float gaussianFilter[25] = {
+
+		1/256.0f,  4/256.0f,  6/256.0f,  4/256.0f, 1/256.0f,
+        4/256.0f, 16/256.0f, 24/256.0f, 16/256.0f, 4/256.0f,
+        6/256.0f, 24/256.0f, 36/256.0f, 24/256.0f, 6/256.0f,
+        4/256.0f, 16/256.0f, 24/256.0f, 16/256.0f, 4/256.0f,
+        1/256.0f,  4/256.0f,  6/256.0f,  4/256.0f, 1/256.0f
+};
+
+float edgeDetectionFilter[9] = {
+
+		0,  1, 0,
+        0,  0, 0,
+        0, -1, 0
+};
+
+//
+//
+int main(int argc, char **argv) {
+
+    init_platform();
+
+    const int edgeFilterDim = 3;
+    const int gausFilterDim = 5;
+
+    uint8_t * mem = (uint8_t *)BASE_ADDR;
+
+    uint8_t * head = &mem[0];
+    uint8_t * data = &mem[HEADER_SIZE + 2];
+
+    printf("Address Map:\n\n");
+    printf("mem   addr: 0x%X\n", mem);
+    printf("head  addr: 0x%X\n", head);
+    printf("data  addr: 0x%X\n", data);
+    printf("fdete addr: 0x%X\n", edgeDetectionFilter);
+    printf("fgaus addr: 0x%X\n\n", gaussianFilter);
+
+    Xil_DCacheFlush();
+
+    XTime tStart, tEnd;
+
+    XConv XConvInstance;
+    XConv_Initialize(&XConvInstance, 0);
+
+    XConv_Set_image_dram(&XConvInstance, data);
+    XConv_Set_filter(&XConvInstance, edgeDetectionFilter);
+    XConv_Set_filterDim(&XConvInstance, edgeFilterDim);
+
+    XTime_GetTime(&tStart);
+
+    XConv_Start(&XConvInstance);
+
+    while(!XConv_IsDone(&XConvInstance));
+
+    XTime_GetTime(&tEnd);
+
+    Xil_DCacheInvalidate();
+
+    printf("FPGA took %.2f us.\n", 1.0 * (tEnd - tStart) / (COUNTS_PER_SECOND/1000000));
+
+    cleanup_platform();
+
+    return EXIT_SUCCESS;
+}

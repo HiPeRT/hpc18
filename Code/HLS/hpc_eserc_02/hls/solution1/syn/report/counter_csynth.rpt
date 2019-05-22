@@ -1,0 +1,155 @@
+
+
+================================================================
+== Vivado HLS Report for 'counter'
+================================================================
+* Date:           Fri Apr 26 13:31:11 2019
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        hls
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     4.321|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |    ?|    ?|         2|          -|          -|     ?|    no    |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|     59|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        0|      -|      74|    104|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|     36|
+|Register         |        -|      -|      69|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|     143|    199|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +----------------------+--------------------+---------+-------+----+-----+
+    |       Instance       |       Module       | BRAM_18K| DSP48E| FF | LUT |
+    +----------------------+--------------------+---------+-------+----+-----+
+    |counter_ctrl_s_axi_U  |counter_ctrl_s_axi  |        0|      0|  74|  104|
+    +----------------------+--------------------+---------+-------+----+-----+
+    |Total                 |                    |        0|      0|  74|  104|
+    +----------------------+--------------------+---------+-------+----+-----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |temp_count_1_fu_92_p2  |     +    |      0|  0|  39|          32|           1|
+    |tmp_fu_69_p2           |   icmp   |      0|  0|  18|          32|          32|
+    |led_out                |    xor   |      0|  0|   2|           1|           2|
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |Total                  |          |      0|  0|  59|          65|          35|
+    +-----------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------+----+-----------+-----+-----------+
+    |       Name       | LUT| Input Size| Bits| Total Bits|
+    +------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm         |  27|          5|    1|          5|
+    |temp_count_fu_36  |   9|          2|   32|         64|
+    +------------------+----+-----------+-----+-----------+
+    |Total             |  36|          7|   33|         69|
+    +------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------+----+----+-----+-----------+
+    |        Name        | FF | LUT| Bits| Const Bits|
+    +--------------------+----+----+-----+-----------+
+    |ap_CS_fsm           |   4|   0|    4|          0|
+    |led_status          |   1|   0|    1|          0|
+    |range_assign_fu_32  |  32|   0|   32|          0|
+    |temp_count_fu_36    |  32|   0|   32|          0|
+    +--------------------+----+----+-----+-----------+
+    |Total               |  69|   0|   69|          0|
+    +--------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+------------+--------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  | Source Object|    C Type    |
++--------------------+-----+-----+------------+--------------+--------------+
+|s_axi_ctrl_AWVALID  |  in |    1|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_AWREADY  | out |    1|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_AWADDR   |  in |    5|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_WVALID   |  in |    1|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_WREADY   | out |    1|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_WDATA    |  in |   32|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_WSTRB    |  in |    4|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_ARVALID  |  in |    1|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_ARREADY  | out |    1|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_ARADDR   |  in |    5|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_RVALID   | out |    1|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_RREADY   |  in |    1|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_RDATA    | out |   32|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_RRESP    | out |    2|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_BVALID   | out |    1|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_BREADY   |  in |    1|    s_axi   |     ctrl     |    scalar    |
+|s_axi_ctrl_BRESP    | out |    2|    s_axi   |     ctrl     |    scalar    |
+|ap_clk              |  in |    1| ap_ctrl_hs |    counter   | return value |
+|ap_rst_n            |  in |    1| ap_ctrl_hs |    counter   | return value |
+|interrupt           | out |    1| ap_ctrl_hs |    counter   | return value |
+|led_out             | out |    1|   ap_vld   |    led_out   |    pointer   |
+|led_out_ap_vld      | out |    1|   ap_vld   |    led_out   |    pointer   |
++--------------------+-----+-----+------------+--------------+--------------+
+
